@@ -22,6 +22,8 @@ end
 % --- Executes just before bigdata is made visible.
 function bigdata_OpeningFcn(hObject, eventdata, handles, varargin)
 
+handles.dataset = 'o3_surface_20180701000000.nc';
+ncdisp(handles.dataset);
 % Choose default command line output for bigdata
 handles.output = hObject;
 
